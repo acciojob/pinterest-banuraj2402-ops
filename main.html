@@ -4,9 +4,93 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-</head>
+<style>
+        body {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            min-height: 100vh;
+            background-color: #f0f0f0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .hero-image {
+            width: 60%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 25px;
+            max-width: 200px;
+            line-height: 1.5;
+        }
+
+        .explore-button {
+            padding: 10px 25px; 
+            background-color: #e60023;
+            color: white; 
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+
+        .explore-button:hover {
+            background-color: #ad081c;
+        }
+    </style>
+</head>
 <body>
+    <div class="hero">
+        <img 
+            src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+            alt="Moraine Lake and mountains" 
+            class="hero-image"
+        >
+
+        <div class="hero-content">
+            <h1>Welcome to my Pinterest clone</h1>
+            
+            <p>Discover new inspiration and save your favorite ideas</p>
+
+            <a href="#" class="explore-button">Explore now</a>
+        </div>
+    </div>
+	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
